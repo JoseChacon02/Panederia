@@ -10,7 +10,7 @@ export default function SnTwo() {
         <div className="w-72 h-72">
           <img className="rounded-full " src="/images/home/5.webp" alt="" />
         </div>
-        <p className="text-center py-8">
+        <p className="text-center text-neutral-300 py-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
           voluptates officiis doloribus, atque nesciunt ab vero eum natus ex
         </p>

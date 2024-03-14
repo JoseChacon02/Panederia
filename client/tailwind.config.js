@@ -32,7 +32,7 @@ export default {
       },
       backgroundImage: {
         homeHead:
-          "url('/images/1.jpg')",
+          "url('/images/1.webp')",
       },
       fontFamily: {
         "MontserratB" : ['MontserratB'],

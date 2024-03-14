@@ -2,7 +2,6 @@ import React from "react";
 import Image from "./Image";
 
 export default function ImagesContainer({imgs }) {
-    console.log(imgs.length)
   return (
     imgs == 1 ? 
     <ul className="flex w-full">

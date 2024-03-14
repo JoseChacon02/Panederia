@@ -1,17 +1,24 @@
-import React from "react";
-import HeaderLink from "../components/home/head/HeaderLink";
+import HeaderLink from "../components/home/HeaderLink";
+import { Navbar, NavbarContent } from "@nextui-org/react";
 
-export default function Navbar({className}) {
+export default function Navbar({ className }) {
+
+
   return (
-    <nav className={`h-16 flex justify-end px-32 bg-neutral-500 ${className}`}>
-      <ul className="flex items-center justify-between">
-        <HeaderLink>HOME</HeaderLink>
-        <HeaderLink>NOSOTROS</HeaderLink>
-        <HeaderLink>PRODUCTOS</HeaderLink>
-        <div className="border-white border-2">
-          <HeaderLink>CONTACTOS</HeaderLink>
-        </div>
-      </ul>
-    </nav>
+    <Navbar>
+      <NavbarContent>
+        
+      </NavbarContent>
+    </Navbar>
+    // <nav className={`h-16 flex justify-end px-32  bg-neutral-500 ${className}`}>
+    //   <ul className="flex items-center w-3/12 justify-between">
+    //     <HeaderLink href="/">HOME</HeaderLink>
+    //     <HeaderLink href="/sobre-nosotros">NOSOTROS</HeaderLink>
+    //     <HeaderLink menu={true} objects={["TORTAS", "PANES", "DULCES"]}>PRODUCTOS</HeaderLink>
+    //     <HeaderLink className="px-2 border-neutral-100 border-2" href="/contacto">
+    //       CONTACTO
+    //     </HeaderLink>
+    //   </ul>
+    // </nav>
   );
 }

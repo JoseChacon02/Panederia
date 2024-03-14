@@ -638,9 +638,9 @@ video {
   border-width: 2px;
 }
 
-.border-white {
+.border-neutral-100 {
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-color: rgb(220 219 225 / var(--tw-border-opacity));
 }
 
 .bg-neutral-500 {
@@ -653,7 +653,7 @@ video {
 }
 
 .bg-homeHead {
-  background-image: url('/images/1.jpg');
+  background-image: url('/images/1.webp');
 }
 
 .bg-cover {
@@ -664,14 +664,14 @@ video {
   background-attachment: fixed;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-32 {
   padding-left: 8rem;
   padding-right: 8rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .py-16 {
@@ -692,6 +692,11 @@ video {
 .py-96 {
   padding-top: 24rem;
   padding-bottom: 24rem;
+}
+
+.py-48 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .text-center {
@@ -718,12 +723,12 @@ video {
   line-height: 1rem;
 }
 
-.font-black {
-  font-weight: 900;
-}
-
 .leading-\[5rem\] {
   line-height: 5rem;
+}
+
+.tracking-wide {
+  letter-spacing: .025em;
 }
 
 .tracking-wider {
@@ -744,19 +749,24 @@ video {
   color: rgb(43 27 27 / var(--tw-text-opacity));
 }
 
+.text-neutral-100 {
+  --tw-text-opacity: 1;
+  color: rgb(220 219 225 / var(--tw-text-opacity));
+}
+
 .text-neutral-400 {
   --tw-text-opacity: 1;
   color: rgb(64 62 74 / var(--tw-text-opacity));
 }
 
-.text-neutral-500 {
-  --tw-text-opacity: 1;
-  color: rgb(39 38 45 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-neutral-300 {
+  --tw-text-opacity: 1;
+  color: rgb(114 111 132 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1111,6 +1121,3 @@ video {
   font-family: "MontserratB";
 }
 
-p{
-  color: "#726F84";
-}

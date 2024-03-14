@@ -17,7 +17,7 @@ export default function SnOne() {
           <div className="w-3/12 flex flex-col items-center justify-between">
             <MdCake size="80" color="#EB6878" />
             <Title type="h3">TORTAS</Title>
-            <p className="text-center py-6">
+            <p className="text-center text-neutral-300 py-6">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Perferendis voluptatem odit at ratione doloribus quia impedit.{" "}
             </p>
@@ -32,7 +32,7 @@ export default function SnOne() {
           <div className="w-3/12 flex flex-col items-center justify-between">
             <FaBreadSlice size="80" color="#EB6878" />
             <Title type="h3">PANES</Title>
-            <p className="text-center py-6">
+            <p className="text-center text-neutral-300 py-6">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Perferendis voluptatem odit at ratione doloribus quia impedit.{" "}
             </p>
@@ -47,7 +47,7 @@ export default function SnOne() {
           <div className="w-3/12 flex flex-col items-center justify-between">
             <GiChocolateBar size="80" color="#EB6878" />
             <Title type="h3">DULCES</Title>
-            <p className="text-center py-6">
+            <p className="text-center text-neutral-300 py-6">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Perferendis voluptatem odit at ratione doloribus quia impedit.{" "}
             </p>
