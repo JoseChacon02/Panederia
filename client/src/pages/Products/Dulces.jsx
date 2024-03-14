@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../../layouts/Navbar'
+import Nav from '../../layouts/Nav'
 import Footer from '../../layouts/Footer'
 
 export default function Dulces() {
   return (
     <div>
-      <Navbar/>
+      <Nav/>
       <Footer/>
     </div>
   )

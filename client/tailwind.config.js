@@ -3,6 +3,7 @@ import { nextui } from "@nextui-org/react";
 
 export default {
   content: [
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.{html,js,jsx}",
   ],
   theme: {
@@ -44,7 +45,7 @@ export default {
         tighter: '-.05em',
         tight: '-.025em',
         normal: '0',
-        wide: '.025em',
+        wide: '0.25em',
         wider: '0.5em',
         widest: '2em',
       }

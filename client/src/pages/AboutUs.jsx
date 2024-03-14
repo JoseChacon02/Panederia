@@ -1,12 +1,12 @@
-import React from 'react'
-import Navbar from '../layouts/Navbar'
-import Footer from '../layouts/Footer'
+import React from "react";
+import Nav from "../layouts/Nav";
+import Footer from "../layouts/Footer";
 
 export default function AboutUs() {
   return (
     <div>
-      <Navbar/>
-      <Footer/>
+      <Nav />
+      <Footer />
     </div>
-  )
+  );
 }

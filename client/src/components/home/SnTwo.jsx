@@ -14,8 +14,8 @@ export default function SnTwo() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
           voluptates officiis doloribus, atque nesciunt ab vero eum natus ex
         </p>
-        <Button color="primary" variant="solid">
-          <Link href="/sobre-nosotros"  className="text-brown-400">
+        <Button className="bg-pink-400" variant="solid">
+          <Link href="/sobre-nosotros"  className=" text-white">
             <Text>CONOCENOS</Text>
           </Link>
         </Button>
