@@ -6,9 +6,9 @@ import Tortas from './pages/Products/Tortas'
 import Dulces from './pages/Products/Dulces'
 import AboutUs from './pages/AboutUs'
 
-
 export default function App() {
   return (
+    
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>

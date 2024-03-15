@@ -5,8 +5,10 @@ import { Link } from "@nextui-org/react";
 import { MdCake } from "react-icons/md";
 import { FaBreadSlice } from "react-icons/fa6";
 import { GiChocolateBar } from "react-icons/gi";
+import { useLocation } from "react-router-dom";
 
 export default function SnOne() {
+  const location = useLocation()
   return (
     <div>
       <div className="flex flex-col items-center my-36">
@@ -61,7 +63,7 @@ export default function SnOne() {
           </div>
         </div>
       </div>
-      <ImagesContainer imgs="1" />
+      <ImagesContainer imgs="1" href="/home"/>
     </div>
   );
 }

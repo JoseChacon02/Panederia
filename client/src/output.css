@@ -775,6 +775,11 @@ video {
   margin-bottom: 9rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .my-\[calc\(\(theme\(spacing\.5\)-theme\(spacing\.1\)\)\/2\)\] {
   margin-top: calc((1.25rem - 0.25rem) / 2);
   margin-bottom: calc((1.25rem - 0.25rem) / 2);
@@ -973,6 +978,10 @@ video {
   height: 2px;
 }
 
+.h-\[30rem\] {
+  height: 30rem;
+}
+
 .h-\[calc\(100dvh_-_var\(--navbar-height\)_-_1px\)\] {
   height: calc(100dvh - var(--navbar-height) - 1px);
 }
@@ -1136,6 +1145,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-6\/12 {
+  width: 50%;
 }
 
 .w-7 {
@@ -2321,6 +2334,11 @@ video {
   padding-right: 0.625rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2519,11 +2537,6 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -2541,11 +2554,6 @@ video {
   font-size: 0.6rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-large {
   font-size: var(--nextui-font-size-large);
   line-height: var(--nextui-line-height-large);
@@ -2554,6 +2562,11 @@ video {
 .text-medium {
   font-size: var(--nextui-font-size-medium);
   line-height: var(--nextui-line-height-medium);
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-small {
@@ -2585,10 +2598,6 @@ video {
 
 .tracking-wide {
   letter-spacing: 0.25em;
-}
-
-.tracking-wider {
-  letter-spacing: 0.5em;
 }
 
 .tracking-widest {

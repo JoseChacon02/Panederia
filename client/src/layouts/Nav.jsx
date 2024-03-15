@@ -12,31 +12,46 @@ import {
   DropdownItem,
 } from "@nextui-org/react";
 import { useLocation } from "react-router-dom";
+import { useLinkLocation } from "../context/providers/LocationProvider";
 
-export default function Nav({className}) {
-  const [activeLink, setActiveLink] = useState("home")
-  const [number, setNumber] = useState(0)
-  const location = useLocation()
+export default function Nav({ className }) {
+  const { isActivateLink, setisActivateLink } = useLinkLocation();
 
-  useEffect(()=>{
-    const onUpdateActiveLink = (value) => {
-      setActiveLink(value)
-    }
-  }, [])
+  const [number, setNumber] = useState(0);
+  const location = useLocation();
 
+  const onUpdateActiveLink = (value) => {
+    setisActivateLink(value);
+  };
 
   return (
-    <Navbar onScrollPositionChange={(e)=>{
-      setNumber(e)
-    }} isBlurred={false} className={number == 0  && location.pathname == '/' ? `${className} justify-end ` : `justify-end bg-neutral-500 `} >
+    <Navbar
+      onScrollPositionChange={(e) => {
+        setNumber(e);
+      }}
+      isBlurred={false}
+      className={
+        number == 0 && location.pathname == "/"
+          ? `${className} justify-end `
+          : `justify-end bg-neutral-500 `
+      }
+    >
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
-        <NavbarItem isActive={activeLink === 'home' ? true : false} onClick={()=> onUpdateActiveLink('home')}>
-          <Link className="text-neutral-100" href="/">
+        <NavbarItem isActive={isActivateLink === "home" ? true : false}>
+          <Link
+            className="text-neutral-100 text-sm"
+            href="/"
+            onClick={() => onUpdateActiveLink("home")}
+          >
             HOME
           </Link>
         </NavbarItem>
-        <NavbarItem isActive={activeLink === 'conocenos' ? true : false} onClick={()=> onUpdateActiveLink('conocenos')}>
-          <Link className="text-neutral-100" href="/sobre-nosotros">
+        <NavbarItem isActive={isActivateLink === "conocenos" ? true : false}>
+          <Link
+            className="text-neutral-100 text-sm"
+            href="/sobre-nosotros"
+            onClick={() => onUpdateActiveLink("conocenos")}
+          >
             CONOCENOS
           </Link>
         </NavbarItem>
@@ -45,7 +60,7 @@ export default function Nav({className}) {
             <DropdownTrigger>
               <Button
                 disableRipple
-                className="p-0 bg-transparent text-base text-neutral-100 data-[hover=true]:bg-transparent"
+                className="p-0 bg-transparent text-sm text-neutral-100 data-[hover=true]:bg-transparent"
                 variant="light"
               >
                 PRODUCTOS
@@ -53,13 +68,19 @@ export default function Nav({className}) {
             </DropdownTrigger>
           </NavbarItem>
           <DropdownMenu>
-            <DropdownItem href="/tortas" className="text-neutral-100">TORTAS</DropdownItem>
-            <DropdownItem href="/panes" className="text-neutral-100">PANES</DropdownItem>
-            <DropdownItem href="/dulces" className="text-neutral-100">DULCES</DropdownItem>
+            <DropdownItem href="/tortas" className="text-neutral-100 text-sm">
+              TORTAS
+            </DropdownItem>
+            <DropdownItem href="/panes" className="text-neutral-100 text-sm">
+              PANES
+            </DropdownItem>
+            <DropdownItem href="/dulces" className="text-neutral-100 text-sm">
+              DULCES
+            </DropdownItem>
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
-          <Link className="text-neutral-100 border px-3" href="/contacto">
+          <Link className="text-neutral-100 border px-3 text-sm" href="/contacto">
             CONTACTO
           </Link>
         </NavbarItem>
