@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -14,8 +14,15 @@ import {
 import { useLocation } from "react-router-dom";
 
 export default function Nav({className}) {
+  const [activeLink, setActiveLink] = useState("home")
   const [number, setNumber] = useState(0)
   const location = useLocation()
+
+  useEffect(()=>{
+    const onUpdateActiveLink = (value) => {
+      setActiveLink(value)
+    }
+  }, [])
 
 
   return (
@@ -23,12 +30,12 @@ export default function Nav({className}) {
       setNumber(e)
     }} isBlurred={false} className={number == 0  && location.pathname == '/' ? `${className} justify-end ` : `justify-end bg-neutral-500 `} >
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
-        <NavbarItem isActive>
+        <NavbarItem isActive={activeLink === 'home' ? true : false} onClick={()=> onUpdateActiveLink('home')}>
           <Link className="text-neutral-100" href="/">
             HOME
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        <NavbarItem isActive={activeLink === 'conocenos' ? true : false} onClick={()=> onUpdateActiveLink('conocenos')}>
           <Link className="text-neutral-100" href="/sobre-nosotros">
             CONOCENOS
           </Link>
