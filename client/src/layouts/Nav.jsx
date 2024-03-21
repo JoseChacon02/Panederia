@@ -25,7 +25,7 @@ export default function Nav({ className }) {
           : `justify-end bg-neutral-500 `
       }
     >
-      <NavbarContent className="hidden sm:flex gap-4" justify="end">
+      <NavbarContent className="hidden sm:flex gap-x-60" justify="end">
         <NavbarItem>
           <Link className="text-neutral-100 text-sm" href="/">
             HOME
