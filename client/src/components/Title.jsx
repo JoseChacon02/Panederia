@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Title({type, children, className}) {
   if (type == 'h1'){
-    return <h1 className="text-5xl  text-white leading-[5rem]">{children}</h1>
+    return <h1 className={`text-5xl leading-[5rem] tracking-wide ${className}`}>{children}</h1>
   }
   if (type == 'h2'){
     return <h2 className={`text-2xl  text-brown-500 tracking-wide ${className}`}>{children}</h2>

@@ -6,9 +6,10 @@ import { MdCake } from "react-icons/md";
 import { FaBreadSlice } from "react-icons/fa6";
 import { GiChocolateBar } from "react-icons/gi";
 import { useLocation } from "react-router-dom";
+import Image from "../Image";
 
 export default function SnOne() {
-  const location = useLocation()
+  const location = useLocation();
   return (
     <div>
       <div className="flex flex-col items-center my-36">
@@ -23,11 +24,7 @@ export default function SnOne() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Perferendis voluptatem odit at ratione doloribus quia impedit.{" "}
             </p>
-            <Link
-              href="/tortas"
-              underline="always"
-              className="text-brown-400"
-            >
+            <Link href="/tortas" underline="always" className="text-brown-400">
               Miralos
             </Link>
           </div>
@@ -38,11 +35,7 @@ export default function SnOne() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Perferendis voluptatem odit at ratione doloribus quia impedit.{" "}
             </p>
-            <Link
-              href="/panes"
-              underline="always"
-              className="text-brown-400"
-            >
+            <Link href="/panes" underline="always" className="text-brown-400">
               Miralos
             </Link>
           </div>
@@ -53,17 +46,18 @@ export default function SnOne() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Perferendis voluptatem odit at ratione doloribus quia impedit.{" "}
             </p>
-            <Link
-              href="/dulces"
-              underline="always"
-              className="text-brown-400"
-            >
+            <Link href="/dulces" underline="always" className="text-brown-400">
               Miralos
             </Link>
           </div>
         </div>
       </div>
-      <ImagesContainer imgs="1" href="/home"/>
+      <ImagesContainer>
+        <Image src="/images/home/scroll/1.webp" />
+        <Image src="/images/home/scroll/2.webp" />
+        <Image src="/images/home/scroll/3.webp" />
+        <Image src="/images/home/scroll/4.webp" />
+      </ImagesContainer>
     </div>
   );
 }

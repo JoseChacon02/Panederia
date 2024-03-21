@@ -15,43 +15,24 @@ import { useLocation } from "react-router-dom";
 import { useLinkLocation } from "../context/providers/LocationProvider";
 
 export default function Nav({ className }) {
-  const { isActivateLink, setisActivateLink } = useLinkLocation();
-
-  const [number, setNumber] = useState(0);
-  const location = useLocation();
-
-  const onUpdateActiveLink = (value) => {
-    setisActivateLink(value);
-  };
-
   return (
     <Navbar
-      onScrollPositionChange={(e) => {
-        setNumber(e);
-      }}
       isBlurred={false}
+      position="static"
       className={
-        number == 0 && location.pathname == "/"
+        location.pathname == "/"
           ? `${className} justify-end `
           : `justify-end bg-neutral-500 `
       }
     >
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
-        <NavbarItem isActive={isActivateLink === "home" ? true : false}>
-          <Link
-            className="text-neutral-100 text-sm"
-            href="/"
-            onClick={() => onUpdateActiveLink("home")}
-          >
+        <NavbarItem>
+          <Link className="text-neutral-100 text-sm" href="/">
             HOME
           </Link>
         </NavbarItem>
-        <NavbarItem isActive={isActivateLink === "conocenos" ? true : false}>
-          <Link
-            className="text-neutral-100 text-sm"
-            href="/sobre-nosotros"
-            onClick={() => onUpdateActiveLink("conocenos")}
-          >
+        <NavbarItem>
+          <Link className="text-neutral-100 text-sm" href="/sobre-nosotros">
             CONOCENOS
           </Link>
         </NavbarItem>
@@ -80,7 +61,10 @@ export default function Nav({ className }) {
           </DropdownMenu>
         </Dropdown>
         <NavbarItem>
-          <Link className="text-neutral-100 border px-3 text-sm" href="/contacto">
+          <Link
+            className="text-neutral-100 border px-3 text-sm"
+            href="/contacto"
+          >
             CONTACTO
           </Link>
         </NavbarItem>

@@ -12,7 +12,7 @@ export default function Home() {
       <Nav className="bg-transparent absolute transition-all" />
       <div className="bg-homeHead bg-fixed h-screen w-full bg-cover ">
         <div className="flex items-center h-5/6 px-32 tracking-widest">
-          <Title type={"h1"}>
+          <Title type={"h1"} className='text-white'>
             PANADERIA <br />
             ANTOJITOS CON AMOR
           </Title>
